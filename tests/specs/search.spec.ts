@@ -9,6 +9,6 @@ test.describe('Google Search', () => {
     await searchPage.open();
     await page.waitForLoadState('networkidle');
     await searchPage.search(keyword);
-    // await searchPage.verifySearchResult(keyword);
+    await searchPage.verifySearchResult(keyword);
   });
 });
